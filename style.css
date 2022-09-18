@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: end;
+}
+
+.cart-button {
+    width: 100px;
+    height: 35px;
+}
+
+#root {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
