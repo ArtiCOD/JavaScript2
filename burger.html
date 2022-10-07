@@ -21,16 +21,28 @@
 
 
         <h2>Бургер может содержать одну или несколько начинок</h2>
-        <label for="cheese">С сыром +10 рублей, +20 калорий</label>
-        <input id="cheese" name="topping" type="checkbox" data-price='10' data-calories="20">
-        <label for="salad">С салатом +20 рублей, +5 калорий</label>
-        <input id="salad" name="topping" type="checkbox" data-price='20' data-calories="5">
-        <label for="patato">С картофелем +15 рублей, +10 калорий</label>
-        <input id="patato" name="topping" type="checkbox" data-price='15' data-calories="10">
-        <label for="spice">Посыпать приправой +15 рублей, +0 калорий</label>
-        <input id="spice" name="topping" type="checkbox" data-price='15' data-calories="">
-
-
+        <ul>
+            <li>
+                <label for="cheese">С сыром +10 рублей, +20 калорий</label>
+                <input id="cheese" name="topping" type="checkbox" data-price='10' data-calories="20">
+            </li>
+            <li>
+                <label for="salad">С салатом +20 рублей, +5 калорий</label>
+                <input id="salad" name="topping" type="checkbox" data-price='20' data-calories="5">
+            </li>
+            <li>
+                <label for="patato">С картофелем +15 рублей, +10 калорий</label>
+                <input id="patato" name="topping" type="checkbox" data-price='15' data-calories="10">
+            </li>
+            <li>
+                <label for="spice">Посыпать приправой +15 рублей, +0 калорий</label>
+                <input id="spice" name="topping" type="checkbox" data-price='15' data-calories="">
+            </li>
+            <li>
+                <label for="spice">Полить мазиком +20 рублей, +10 калорий</label>
+                <input id="spice" name="topping" type="checkbox" data-price='20' data-calories="10">
+            </li>
+        </ul>
         <div id="calories"></div>
         <div id="price"></div>
     </section>
