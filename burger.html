@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Бутерок да Бургерок</h1>
+    </header>
+    <section id="container">
+        <h2>Выберите размер бургера</h2>
+        <label for="small">Маленький бургер 50 рублей, 20 калорий</label>
+        <input name="burger" type="radio" id="small" checked data-price='50' data-calories="20">
+        <label for="big">Большой бургер 100 рублей, 40 калорий</label>
+        <input name="burger" type="radio" id="big" data-price='100' data-calories="40">
+
+
+        <h2>Бургер может содержать одну или несколько начинок</h2>
+        <label for="cheese">С сыром +10 рублей, +20 калорий</label>
+        <input id="cheese" name="topping" type="checkbox" data-price='10' data-calories="20">
+        <label for="salad">С салатом +20 рублей, +5 калорий</label>
+        <input id="salad" name="topping" type="checkbox" data-price='20' data-calories="5">
+        <label for="patato">С картофелем +15 рублей, +10 калорий</label>
+        <input id="patato" name="topping" type="checkbox" data-price='15' data-calories="10">
+        <label for="spice">Посыпать приправой +15 рублей, +0 калорий</label>
+        <input id="spice" name="topping" type="checkbox" data-price='15' data-calories="">
+
+
+        <div id="calories"></div>
+        <div id="price"></div>
+    </section>
+    <script src="script1.js"></script>
+</body>
+
+</html>
