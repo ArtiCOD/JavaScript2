@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <label for="">Имя</label>
+            <input type="text" id="name">
+        </li>
+        <li>
+            <label for="">Телефон</label>
+            <input type="text" id="phone">
+        </li>
+        <li>
+            <label for="">Email</label>
+            <input type="text" id="mail">
+        </li>
+        <li>
+            <textarea id="comment" cols="30" rows="5"></textarea>
+        </li>
+    </ul>
+    <button class="send" type="button">Отправить</button>
+
+
+
+    <script>
+        const button = document.querySelector('.send');
+        let inputName = document.querySelector('#name');
+        let inputPhone = document.querySelector('#phone');
+        let inputMail = document.querySelector('#mail');
+        let regexpName = /^[A-Za-zА-Яа-я ]+$/;
+        let regexpMail = /^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/;
+        let regexpPhone = /^\+\d{1}\(\d{3}\)\d{3}-\d{4}$/;
+        button.addEventListener('click', () => {
+            inputName.value.match(regexpName) ? true : inputName.style.cssText = `border: 4px solid red`;
+            inputPhone.value.match(regexpPhone) ? true : inputPhone.style.cssText = `border: 4px solid red`;
+            inputMail.value.match(regexpMail) ? true : inputMail.style.cssText = `border: 4px solid red`;
+        });   
+    </script>
+</body>
+
+</html>
