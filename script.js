@@ -141,9 +141,13 @@ class ProductInBasket {
 
 
 let list = new ProductList();
-document.querySelector('button').addEventListener('click', () => {
+document.querySelector('.cart-button').addEventListener('click', () => {
     let basket = new Basket();
 });
+
+
+
+
 
 
 
